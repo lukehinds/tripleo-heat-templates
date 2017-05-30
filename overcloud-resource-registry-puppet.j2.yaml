@@ -107,6 +107,7 @@ resource_registry:
 
   # services
   OS::TripleO::Services: puppet/services/services.yaml
+  OS::TripleO::Services::Apache: puppet/services/aide.yaml
   OS::TripleO::Services::Apache: puppet/services/apache.yaml
   OS::TripleO::Services::CACerts: puppet/services/ca-certs.yaml
   OS::TripleO::Services::CephMds: OS::Heat::None

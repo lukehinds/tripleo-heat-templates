@@ -41,6 +41,7 @@
     - primary
     - controller
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::CACerts
     - OS::TripleO::Services::CertmongerUser
     - OS::TripleO::Services::CephMds
@@ -153,6 +154,7 @@
   HostnameFormatDefault: '%stackname%-novacompute-%index%'
   disable_upgrade_deployment: True
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::CACerts
     - OS::TripleO::Services::CertmongerUser
     - OS::TripleO::Services::CephClient
@@ -185,6 +187,7 @@
 
 - name: BlockStorage
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::CACerts
     - OS::TripleO::Services::CertmongerUser
     - OS::TripleO::Services::BlockStorageCinderVolume
@@ -206,6 +209,7 @@
 - name: ObjectStorage
   disable_upgrade_deployment: True
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::CACerts
     - OS::TripleO::Services::CertmongerUser
     - OS::TripleO::Services::Kernel
@@ -227,6 +231,7 @@
 
 - name: CephStorage
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::CACerts
     - OS::TripleO::Services::CertmongerUser
     - OS::TripleO::Services::CephOSD

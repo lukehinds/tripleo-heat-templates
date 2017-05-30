@@ -5,6 +5,7 @@
     - primary
     - controller
   ServicesDefault:
+    - OS::TripleO::Services::Aide
     - OS::TripleO::Services::Ntp
     - OS::TripleO::Services::MySQL
     - OS::TripleO::Services::MongoDb

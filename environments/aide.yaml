@@ -1,0 +1,14 @@
+resource_registry:
+  OS::TripleO::Services::Aide: ../puppet/services/aide.yaml
+
+parameter_defaults:
+  AideRules:
+    'PuppetRules':
+      content: 'PuppetRules = p+sha256'
+      order  : 1
+    'etc':
+      content: '/etc/ PuppetRules'
+      order  : 2
+    'boot':
+      content: '/boot/ PuppetRules'
+      order  : 3
