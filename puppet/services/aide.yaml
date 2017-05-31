@@ -51,4 +51,4 @@ outputs:
       config_settings:
         aide::rules: {get_param: AideRules}
       step_config: |
-        include ::tripleo::profile::base::aide::aide
+        include ::tripleo::profile::base::aide
