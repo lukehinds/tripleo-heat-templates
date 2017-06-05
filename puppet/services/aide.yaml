@@ -49,6 +49,6 @@ outputs:
     value:
       service_name: aide
       config_settings:
-        tripleo::profile::base::aide::rules: {get_param: AideRules}
+        tripleo::profile::base::aide: {get_param: AideRules}
       step_config: |
         include ::tripleo::profile::base::aide
