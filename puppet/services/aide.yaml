@@ -52,3 +52,7 @@ outputs:
         tripleo::profile::base::aide: {get_param: AideRules}
       step_config: |
         include ::tripleo::profile::base::aide
+      upgrade_tasks:
+       - name: Install aide
+         tags: step3
+         yum: name=aide state=latest
