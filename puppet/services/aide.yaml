@@ -50,9 +50,12 @@ outputs:
       service_name: aide
       config_settings:
         tripleo::profile::base::aide: {get_param: AideRules}
+        aide::aide_plugin_provider: 'yum'
+        aide::aide_plugin_name: 'aide'
+        aide::version: 'present'
       step_config: |
         include ::tripleo::profile::base::aide
       upgrade_tasks:
-       - name: Install aide
+       - name: Ensure Aide is installed
          tags: step3
          yum: name=aide state=latest
